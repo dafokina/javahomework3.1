@@ -1,10 +1,14 @@
 public class Main1 {
     public static void main(String[] args) {
-        int amount = 1000;
-        int percent = 20;
-        int bonus = amount / percent;
+       int amountOfMoney = 200;
+       int replenishmentAmount = 2000;
 
-        System.out.println("здравствуйте, Вам начислены бонусы в количестве " + bonus);
-
+       int percent;
+       if (replenishmentAmount >= 1000) {
+           percent = replenishmentAmount / 100;
+       } else {
+           percent = 0;
+       }
+        System.out.println("Сумма ваших бонусов: " + percent);
     }
 }
