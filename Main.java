@@ -1,8 +1,8 @@
 public class Main {
     public static void main(String[] args) {
-        BmiService service = new BmiService();
-        double bmi = service.calculate(60, 1.60);
-        System.out.println(bmi);
-
+        BonusMilesService service = new BonusMilesService();
+        int price = 10_000;
+        int miles = service.calculate(price);
+        System.out.println(miles);
     }
 }
